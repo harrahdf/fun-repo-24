@@ -56,3 +56,6 @@ library(boilrdata)
 
 
 marsupialsTibble <- as_tibble(marsupials)
+
+
+summary(lm(MaxLifeSpan ~ Mass, data = marsupials))
