@@ -59,3 +59,6 @@ marsupialsTibble <- as_tibble(marsupials)
 
 
 summary(lm(MaxLifeSpan ~ Mass, data = marsupials))
+
+ggplot(marsupialsTibble, aes(x = Mass, y = MaxLifeSpan))+
+  geom_point()
