@@ -55,7 +55,8 @@ library(tidyverse)
 library(boilrdata)
 
 
-marsupialsTibble <- as_tibble(marsupials)
+marsupialsTibble <- as_tibble(marsupials) |>
+  filter(Genus == "Acrobates")
 
 
 summary(lm(MaxLifeSpan ~ Mass, data = marsupials))
