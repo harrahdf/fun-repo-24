@@ -55,9 +55,6 @@ library(tidyverse)
 library(boilrdata)
 
 
-marsupialsTibble <- as_tibble(marsupials) |>
-  filter(Genus == "Planigale")
-
 
 summary(lm(MaxLifeSpan ~ Mass, data = marsupials))
 
